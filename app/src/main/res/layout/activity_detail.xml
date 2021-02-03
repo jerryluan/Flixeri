@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailActivity"
+    android:orientation="vertical">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <TextView
+        android:id="@+id/MVtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:isIndicator="true"
+        android:numStars="10" />
+
+    <TextView
+        android:id="@+id/MVoverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="overview it's " />
+
+</LinearLayout>
